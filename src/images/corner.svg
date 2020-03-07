@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="438" height="372" viewBox="0 0 438 372">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0" cy="0" r="0.866" gradientTransform="matrix(-1, 0, 0, 1, 0, 0)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1" stop-color="#e7e7e7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect id="corner" width="438" height="372" fill="url(#radial-gradient)"/>
+</svg>

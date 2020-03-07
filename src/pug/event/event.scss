@@ -1,0 +1,146 @@
+.events{
+  min-height: 100vh;
+}
+.events__teacher{
+  position: absolute;
+  left: 0;
+  bottom: 130px;
+  .ticher__name{
+    text-transform: none;
+  }
+}
+.events__btn-wrap{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  bottom: 130px;
+  .container{
+    display: flex;
+     justify-content: flex-end;
+  }
+}
+
+.events__btn{
+  font-weight: 500;
+  width: 320px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  border: 2px solid #FF0000;
+  background-color: #FF0000;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:visited{
+    color: #fff;
+  }
+  &:hover{
+    background-color: transparent;
+    color: #FF0000;
+}
+}
+
+
+.events__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.events__title{
+  font-size: 50px;
+  line-height: 55px;
+  color: #FF0000;
+  text-transform: uppercase;
+  margin-right: 55px;
+  font-family: "Caslon";
+  font-style: italic;
+  position: absolute;
+  left: 50px;
+  top: 160px;
+}
+
+.events__text{
+  width: 320px;
+  padding-top: 75px;
+  p{
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Bannikova";
+    margin-bottom: 15px;
+  }
+}
+
+.events__pics{
+  padding-left: 260px;
+  width: calc(100% - 276px);
+  img{
+    width: 100%;
+  }
+}
+
+.events__slider{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.events__slider{
+  display: none;
+}
+
+
+
+@media(max-width: 980px){
+  .events__list{
+    flex-wrap: wrap;
+  }
+  .events__title{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .events__pics{
+    width: 50%;
+  } 
+  .events__teacher{
+    position: relative;
+    bottom: auto;
+    padding-bottom: 90px;
+  }
+}
+
+
+@media(max-width: 768px){
+  .events__slider{
+    display: block;
+  }
+  .events{
+    overflow: hidden;
+  }
+  .events .nav{
+    padding-top: 0px;
+  }
+  .events__title{
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .events__pics{
+    width: 100%;
+  }
+  .events__text{
+    width: 100%;
+  }
+  .events__btn-wrap{
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    bottom: 30px;
+    .events__btn {
+      max-width: 100%;
+      width: 100%;
+    }
+    .container{
+      justify-content: flex-start;
+    }
+  }
+}
